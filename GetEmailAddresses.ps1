@@ -1,0 +1,1 @@
+Get-Recipient | Select DisplayName, RecipientType, EmailAddresses | Export-Csv -NoTypeInformation "c:\admin\alignment\email addresses.csv"

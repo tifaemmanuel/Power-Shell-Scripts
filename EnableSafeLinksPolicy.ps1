@@ -1,0 +1,1 @@
+Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true -EnableSafeLinksForO365Clients $true -EnableSafeLinksForWebAccessCompanion $true 

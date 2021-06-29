@@ -1,0 +1,1 @@
+Get-OrganizationConfig | select-object oauth2clientprofileenabled

@@ -1,0 +1,1 @@
+Get-TransportRule | Where-Object {($_.setscl -eq -1 -and $_.SenderDomainIs -ne $null)} | select-object Name,SenderDomainIs | export-csv -NoTypeInformation "c:\admin\alignment\Spam Bypass Domains.csv"

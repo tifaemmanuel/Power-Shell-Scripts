@@ -1,0 +1,2 @@
+import-module ActiveDirectory -ErrorAction SilentlyContinue
+Get-ADComputer -Filter * -Properties * | Select-Object -Property Name,DNSHostName,Enabled,LastLogonDate | Export-CSV "C:\admin\AllADComputers.csv" -NoTypeInformation -Encoding UTF8

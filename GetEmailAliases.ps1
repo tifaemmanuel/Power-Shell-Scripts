@@ -1,0 +1,1 @@
+Get-Mailbox | Select-Object DisplayName,@{Name="EmailAddresses";Expression={$_.EmailAddresses |Where-Object {$_ -LIKE "SMTP:*"}}} | Sort | Export-Csv "C:\admin\alignment\email-aliases.csv"
